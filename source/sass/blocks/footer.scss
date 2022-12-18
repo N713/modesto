@@ -1,0 +1,165 @@
+.footer {
+    padding: calc(#{$gap-1} * 4) 0;
+    background-color: $lighterBlack;
+    color: $lightYellow;
+
+    h2 {
+        margin-bottom: calc(#{$gap-1} * 3);
+    }
+
+    ul {
+        margin-bottom: calc(#{$gap-1} * 6);
+    }
+
+    li {
+        margin-bottom: calc(#{$gap-1} * 2);
+        
+        p, a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    a:not(.button) {
+        transition: color 0.2s;
+
+        &:hover,
+        &:focus {
+            color: $yellow;
+        }
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: $copyrightGray;
+    }
+
+    &__tel {
+        padding: 0;
+        color: $lightYellow;
+    }
+
+    &__socials,
+    &__contacts {
+        li {
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+            }
+
+            .button {
+                max-width: 172px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                min-height: 48px;
+        
+                svg {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $tablet) {
+    .footer {
+        .wrapper {
+            padding: 0 calc(#{$gap-1} * 3);
+        }
+
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__adress {
+            order: 1;
+        }
+
+        &__socials {
+            order: 3;
+            width: 100%;
+        }
+
+        &__contacts {
+            order: 2;
+            margin-left: auto;
+            width: 247px;
+
+            li {
+                .button {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $desktop) {
+    .footer {
+        padding: calc(#{$gap-2} * 4) 0;
+    }
+}
+
+@media(min-width: $desktop-1) {
+    .footer {
+        .wrapper {
+            padding: 0;
+        }
+
+        ul {
+            margin-bottom: 0;
+
+            li {
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__adress {
+            order: 1;
+
+            ul {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            li {
+                margin-right: calc(#{$gap-2} * 2);
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__socials {
+            order: 2;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        &__contacts {
+            order: 3;
+            width: 204px;
+            margin-left: 0;
+
+            li {
+                .button {
+                    max-width: 172px;
+                }
+            }
+        }
+
+        &__copyright {
+            display: none;
+        }
+    }
+}

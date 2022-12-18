@@ -1,0 +1,12 @@
+.wrapper {
+    width: 100%;
+    max-width: $wrapper;
+    margin: 0 auto;
+    padding: 0 $gap-2;
+}
+
+@media(min-width: $desktop-1) {
+    .wrapper {
+        padding: 0;
+    }
+}

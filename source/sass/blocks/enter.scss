@@ -1,0 +1,15 @@
+.enter {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    background-color: transparent;
+    padding: 14px 30px;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus {
+        color: $lightenBlack;
+    }
+}

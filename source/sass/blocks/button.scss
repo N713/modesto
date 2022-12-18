@@ -1,0 +1,38 @@
+.button {
+    background-color: $yellow;
+    color: $black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $green;
+        color: $lightYellow;
+    }
+
+    &--gray {
+        background-color: $lightGray;
+
+        &:hover,
+        &:focus {
+            background-color: $lighterBlack;
+        }
+    }
+}
+
+@media(min-width: $tablet) {
+    .button {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

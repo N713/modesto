@@ -1,0 +1,18 @@
+.captcha {
+    color: $lightenYellow;
+    background-color: $captchaGrey;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: $gap-2 0;
+
+    span {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 52px;
+        font-family: $rubik;
+        margin: 0 12px 0;
+    }
+}

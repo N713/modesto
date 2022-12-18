@@ -1,0 +1,33 @@
+.top {
+    background-image: url('../img/mobile-top-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: calc(#{$gap-2} * 5 - #{$gap-1});
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/mobile-top-back@2x.png');
+    }
+}
+
+@media(min-width: $tablet) {
+    .top {
+        background-image: url('../img/tablet-top-back.png');
+        padding-bottom: calc(#{$gap-2} * 6 + 9px);
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url('../img/tablet-top-back@2x.png');
+        }
+    }
+}
+
+@media(min-width: $desktop) {
+    .top {
+        background-image: url('../img/back.png');
+        padding-bottom: calc(#{$gap-2} * 11 + 11px);
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url('../img/back@2x.png');
+        }
+    }
+}

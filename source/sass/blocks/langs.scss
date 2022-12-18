@@ -1,0 +1,42 @@
+.langs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $gap-1;
+
+    button {
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: $gap-1;
+        color: $gray;
+        transition: color 0.2s;
+        cursor: pointer;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:focus {
+            color: $green;
+        }
+    }
+
+    button.langs__active {
+        color: $black;
+        pointer-events: none;
+    }
+}
+
+@media(min-width: $tablet) {
+    .langs {
+        button {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}

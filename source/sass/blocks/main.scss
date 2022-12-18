@@ -1,0 +1,27 @@
+.main {
+    padding: $gap-2 0;
+    background-image: url('../img/form-back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/form-back@2x.jpg');
+    }
+}
+
+@media(min-width: $tablet) {
+    .main {
+        padding: calc(#{$gap-2} * 2) 0;
+
+        .wrapper {
+            padding: 0 calc(#{$gap-2} * 2);
+        }
+    }
+}
+
+@media(min-width: $desktop) {
+    .main {
+        padding: calc(#{$gap-2} * 10) 0;
+    }
+}

@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  @include reset();
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: $lightYellow;
+  font-family: $raleway;
+  color: $lighterBlack;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+h2 {
+  font-family: $marmelad;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+label, input {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input {
+  color: $lightenBlack;
+}
+
+button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
